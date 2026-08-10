@@ -33,41 +33,20 @@ int divide(int a, int b)
     else
     {
         printf("Error: Division by zero!\n");
-        return 0;
+        return 0; // Return 0 or handle the error as needed
     }
 }
 
 int main()
 {
-    int a, b, choice;
+    int a, b;
     printf("Enter a number: ");
     scanf("%d", &a);
     printf("Enter another number: ");
     scanf("%d", &b);
-    printf("Choose an operation:\n");
-    printf("1. Addition\n");
-    printf("2. Subtraction\n");
-    printf("3. Multiplication\n");
-    printf("4. Division\n");
-    printf("Enter your choice: ");
-    scanf("%d", &choice);
-
-    switch (choice)
-    {
-    case 1:
-        printf("Sum: %d\n", add(a, b));
-        break;
-    case 2:
-        printf("Difference: %d\n", subtract(a, b));
-        break;
-    case 3:
-        printf("Product: %d\n", multiply(a, b));
-        break;
-    case 4:
-        printf("Quotient: %d\n", divide(a, b));
-        break;
-    default:
-        printf("Invalid choice!\n");
-    }
+    printf("Sum: %d\n", add(a, b));
+    printf("Difference: %d\n", subtract(a, b));
+    printf("Product: %d\n", multiply(a, b));
+    printf("Quotient: %d\n", divide(a, b));
     return 0;
 }
